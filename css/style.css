@@ -87,6 +87,8 @@ a {
     border: 1px solid #E7E1D5;
     border-radius: 10px;
     padding: 10px;
+    width: 40px;
+    height: 40px;
     transition: 300ms;
 }
 
@@ -100,6 +102,14 @@ a {
     color: #6D7179;
 }
 
+#font-size {
+    width: 3.2rem;
+    height: 2.2rem;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
 /* text-area */
 
 #text-area {
@@ -107,6 +117,7 @@ a {
     height: 60vh;
     display: flex;
     justify-content: center;
+    font-size: 14px;
 }
 
 .text-area-container {
