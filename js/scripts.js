@@ -35,10 +35,28 @@ $(()=>{
         $('#direita').removeClass('selected');
     })
     
-    
     $('#font-size').change(()=>{
         var tamanho = $('#font-size').val() + 'px';
         $('.text-area').css('font-size', tamanho);
     })
+
+    $('#color').change(()=>{
+        var color = $('#color').val();
+        $('.text-area').css('color', color);
+    })
+    
+   /*  $('#negrito').on('click', function(){
+    
+        var text = "";
+        if (window.getSelection) {
+            text = window.getSelection().toString();
+        } else if (document.selection && document.selection.type != "Control") {
+            text = document.selection.createRange().text;
+        }
+        
+        text = '<b>' + text + '</b>';
+
+        $('.text-area').html(text)
+    }); */
     
 });
