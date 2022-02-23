@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/1eb8ca0336.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Text editor</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="navbar-container">
+            <h1 id="logo">Editor de texto</h1>
+            <div class="links">
+                <a href="#" id="login">login</a>
+                <a href="#" id="cadastrar">Cadastrar</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <header id="barra-de-ferramentas">
+        <div class="barra-de-ferramentas-container">
+            <ul id="ferramentas">
+                <li><button id="negrito" onclick="negrito" class="ferramenta btn"><i class="fa fa-solid fa-bold fa-1x"></i></button></li>
+                <li><button id="italico" class="ferramenta btn"><i class="fa fa-solid fa-italic fa-1x"></i></button></li>
+                <li><button id="sublinhado" class="ferramenta btn"><i class="fa fa-solid fa-underline fa-1x"></i></button></li>
+                <li><input id="font-size" class="ferramenta" type="number"></li>
+            </ul>
+        </div>
+    </header>
+    <section id="text-area">
+        <div class="text-area-container">
+            <textarea  name="" id="text-area" class="text-area" cols="30" rows="10"></textarea>
+        </div>
+    </section>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
